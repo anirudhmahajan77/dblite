@@ -23,16 +23,15 @@ export class CodeEditor extends Component {
         mode="mysql"
         theme="monokai"
         name="sql_query"
-        onLoad={() => { }}
-        onChange={(value) => { this.setState({ query: value }) }}
+        onChange={(value) => { this.props.updateQuery(value) }}
         fontSize={16}
-        minLines={34}
-        maxLines={90}
+        minLines={25}
+        maxLines={25}
         width="100%"
         showPrintMargin={false}
         showGutter={true}
         highlightActiveLine={true}
-        value={this.state.query}
+        value={this.props.query}
         setOptions={{
           enableBasicAutocompletion: true,
           enableLiveAutocompletion: true,

@@ -19,3 +19,81 @@
     justify-content: center;
     width: 50%;
 }
+.inputTitle{
+    padding: 10px;
+    border-top-right-radius: 8px;
+    width: 5em;
+    text-align: center;
+    background-color: var(--bottonBorder);
+    color: aliceblue;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.control{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.saveQuery{
+    color: white;
+    background-color: #01d356;
+    padding: 8px;
+    width: 35px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: larger;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.saveQuery:hover{
+    cursor: pointer;
+}
+.runQuery{
+    color: white;
+    background-color: red;
+    padding: 8px;
+    width: 35px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: larger;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.runQuery:hover{
+    cursor: pointer;
+}
+.resetQuery{
+    color: white;
+    background-color: var(--bottonBorder);
+    padding: 8px;
+    width: 35px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: larger;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.resetQuery:hover{
+    cursor: pointer;
+}
+.queryTitle{
+    font-size: large;
+    text-align: center;
+}
+.dummyQuery{
+    border: 2px solid red;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px;
+}
+.dummyQuery:hover{
+    cursor: pointer;
+}
