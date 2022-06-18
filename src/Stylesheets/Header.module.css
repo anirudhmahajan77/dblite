@@ -39,9 +39,15 @@ a:active{
 }
 
 @media screen and (max-width:1100px) {
+    .headerContainer{
+        height: fit-content;
+    }
     .logo{
-        height: 10em;
-        width: 10em;
+        height: 4em;
+        width: 5em;
+    }
+    .credit{
+        margin-bottom: 20px;
     }
 }
 
