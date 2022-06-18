@@ -1,0 +1,14 @@
+.tableHeadline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.tableName{
+    font-size: 28px;
+    font-weight: 600;
+}
+.dataType{
+    display: inline;
+    color: var(--accent);
+}

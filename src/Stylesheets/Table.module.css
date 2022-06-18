@@ -1,0 +1,11 @@
+.dataTable{
+    overflow-y: scroll;
+    max-height: 150px;
+    height: auto;
+    min-height: 20px;
+    width: 1000px;
+    overflow: auto;
+}
+.header{
+    
+}

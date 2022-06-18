@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .leftContainer{
@@ -15,7 +15,7 @@
 .rightContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 50%;
 }
@@ -47,6 +47,7 @@
     padding: 8px;
     width: 35px;
     margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
     font-size: larger;
     border-top-left-radius: 6px;
@@ -83,12 +84,28 @@
 .resetQuery:hover{
     cursor: pointer;
 }
+.uploadQuery{
+    color: white;
+    background-color: var(--accent);
+    padding: 8px;
+    width: 35px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: larger;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 0;
+}
+.uploadQuery:hover{
+    cursor: pointer;
+}
+
 .queryTitle{
     font-size: large;
     text-align: center;
 }
 .dummyQuery{
-    border: 2px solid red;
+    border: 2px solid var(--accent);
     border-radius: 6px;
     display: inline-block;
     padding: 5px 10px;
@@ -96,4 +113,7 @@
 }
 .dummyQuery:hover{
     cursor: pointer;
+}
+.uploadFix{
+    display: none;
 }
