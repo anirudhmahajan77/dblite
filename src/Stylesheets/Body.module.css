@@ -109,7 +109,7 @@
     border-radius: 6px;
     display: inline-block;
     padding: 5px 10px;
-    margin: 10px;
+    margin: 5px;
 }
 .dummyQuery:hover{
     cursor: pointer;

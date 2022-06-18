@@ -45,6 +45,11 @@
   height: 5px;
   background: var(--accent);
 }
+.noQuery{
+  font-size: 28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
 
 
 
@@ -59,8 +64,11 @@ button {
   background: white;
   padding: 20px;
   width: auto;
-  height: 88%;
+  min-height: 15em;
+  height: fit-content;
+  max-height: 35em;
   display: none;
+  overflow: scroll;
 }
 .content h2 {
   padding: 0px 0 5px 0px;

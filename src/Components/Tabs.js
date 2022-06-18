@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "../Stylesheets/Tabs.css";
 import DataDesc from "./DataDesc";
+import Table from "./Table";
+import { FiInfo } from "react-icons/fi";
 
-function Tabs() {
+function Tabs(props) {
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
@@ -30,13 +32,7 @@ function Tabs() {
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
-          <h2>Content 1</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
+            {props.run? <Table run={props.run} queryToRun={props.queryToRun} /> : <div className="noQuery"><FiInfo/> No query has been run yet</div>}
         </div>
 
         <div
