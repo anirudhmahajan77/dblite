@@ -51,11 +51,8 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-
-
 button {
-  border: none;
-  
+  border: none;  
 }
 .content-tabs {
   flex-grow : 1;

@@ -198,6 +198,7 @@ export class Body extends Component {
                                 </div>
                             )
                         })}
+                        <p className={styles.fix}></p>
                     </div>
                 </div>
                 <div className={styles.rightContainer}>

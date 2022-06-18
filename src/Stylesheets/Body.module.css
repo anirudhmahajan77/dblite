@@ -10,18 +10,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 50%;
-    width: auto;
-    max-width: revert;
+    width: 50%;
 }
 .rightContainer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-width: 50%;
-    width: auto;
-    max-width: revert;
+    width: 50%;
 }
 .inputTitle{
     padding: 10px;
@@ -37,7 +33,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
 }
 .control{
     display: flex;
@@ -105,8 +100,13 @@
 }
 
 .queryTitle{
-    font-size: large;
+    font-size: 22px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
     text-align: center;
+    margin-bottom:10px;
+    margin-top: 10px;
 }
 .dummyQuery{
     border: 2px solid var(--accent);
@@ -126,10 +126,28 @@
     .bodyContainer{
         flex-direction: column;
     }
+    .fix{
+        margin-bottom: 10px;
+    }
+    .leftContainer{
+        width: 100%;
+    }
+    .rightContainer{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:650px) {
     .bodyContainer{
         flex-direction: column;
+    }
+    .fix{
+        margin-bottom: 10px;
+    }
+    .leftContainer{
+        width: 100%;
+    }
+    .rightContainer{
+        width: 100%;
     }
 }
