@@ -181,7 +181,7 @@ export class Body extends Component {
                         <div className={styles.control}>
                             <p onClick={this.resetQuery} className={`${styles.resetQuery} ${styles.avatar}`}  data-tooltip="Reset"><FiRefreshCcw /></p>
                             <p onClick={this.runQuery} className={`${styles.runQuery} ${styles.avatar}`} data-tooltip="Run" ><FiZap /></p>
-                            <label className={`${styles.uploadQuery} ${styles.avatar}`} data-tooltip="Reset">
+                            <label className={`${styles.uploadQuery} ${styles.avatar}`} data-tooltip="Upload">
                                 <input className={styles.uploadFix} type="file" onChange={(e) => this.uploadQuery(e)} />
                                 <FiUpload />
                             </label>
