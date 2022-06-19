@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+# DBLite - SQL Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project: [Live Demo](https://dblite.netlify.app/)
+
+
+Create, design and implement a web-based application capable of running SQL queries and displaying the results of said query. The application must include a space which accepts SQL queries in the form of user inputs, then runs the given query, and displays the result within the application.
+
+- This is a dummy application bootstrapped with yarn and create-react-app.
+- The application has a full-blown code-editor to write SQL.
+- We can run pre-defined queries and download the result in `csv` format.
+- The application offers the functionality to upload and alter pre-written queries by extracting the content from the file.
+- Proper IDE Structure has been implemented for a familiar experience for the user.
+- The application is mobile-friendly so that user can also use the application on their mobile phones.
+
+## Technologies
+- `Yarn`
+- `React JS`
+
+## NPM Packages Used
+- `react-icons`: v4.4.0
+- `react-csv`: v2.2.2
+- `react-ace`: v10.1.0
+
+## Pre-Defined Queries
+- `select * from customers;`
+- `select * from orders limit 5;`
+- `select * from orders where employeeID = 4;`
+- `select * from customers where contactName = "Maria Anders";`
+
+## Project Performance
+This Performance Testing has been done with the help of [PageSpeed Insights](https://pagespeed.web.dev/) By Google
+### Desktop
+![Desktop Report](./src/Screenshots/desktop.png?raw=true "Desktop Report")
+
+### Mobile
+![Mobile Report](./src/Screenshots/mobile.png?raw=true "Mobile Report")
+
+### Home Page Design
+![Home Page Design](./src/Screenshots/home.jpeg?ra=true "Home Page Design")
+
+## Optimization
+- Highly Optimized component based architecture has been implemented to reduce the page size and improve code reusability.
+- Minimum Use of packages has been done to make sure better and highly optimized application can be deployed to the production.
+- The application assets are light-weight to make sure it loads fast and print time is minimum.
 
 ## Available Scripts
 
@@ -44,27 +85,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
