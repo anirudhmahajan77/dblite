@@ -179,13 +179,13 @@ export class Body extends Component {
                     <div className={styles.inputContainer}>
                         <p className={styles.inputTitle}>Input</p>
                         <div className={styles.control}>
-                            <p onClick={this.resetQuery} className={styles.resetQuery}><FiRefreshCcw /></p>
-                            <p onClick={this.runQuery} className={styles.runQuery}><FiZap /></p>
-                            <label className={styles.uploadQuery}>
+                            <p onClick={this.resetQuery} className={`${styles.resetQuery} ${styles.avatar}`}  data-tooltip="Reset"><FiRefreshCcw /></p>
+                            <p onClick={this.runQuery} className={`${styles.runQuery} ${styles.avatar}`} data-tooltip="Run" ><FiZap /></p>
+                            <label className={`${styles.uploadQuery} ${styles.avatar}`} data-tooltip="Reset">
                                 <input className={styles.uploadFix} type="file" onChange={(e) => this.uploadQuery(e)} />
                                 <FiUpload />
                             </label>
-                            <p className={styles.saveQuery} onClick={this.downloadQueries}><FiSave /></p>
+                            <p className={`${styles.saveQuery} ${styles.avatar}`} onClick={this.downloadQueries} data-tooltip="Save"><FiSave /></p>
                         </div>
                     </div>
                     <CodeEditor updateQuery={this.updateQuery} query={this.state.query} />

@@ -34,7 +34,6 @@ function Tabs(props) {
         >
             {props.run? <Table run={props.run} queryToRun={props.queryToRun} /> : <div className="noQuery"><FiInfo/> No query has been run yet</div>}
         </div>
-
         <div
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
