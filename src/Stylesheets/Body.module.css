@@ -178,7 +178,7 @@
     content: attr(data-tooltip);
     color: white;
     padding: .3rem;
-    font-size: mediumg;
+    font-size: medium;
     border-radius: .3rem;
     text-align: center;
     width: max-content;
